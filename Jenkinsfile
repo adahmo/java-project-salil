@@ -4,7 +4,7 @@ pipeline {
      git_branch = "master"
    }
 
-  //agent {label 'dev'}
+  agent {label 'dev'}
   agent any
   stages {
     stage('Pull Source') {
@@ -22,7 +22,7 @@ pipeline {
      
     stage('Docker Image Build') {     
         steps {
-              //sh 'sudo docker build -t myjava-image . '
+              sh 'sudo docker build -t myjava-image . '
                }
              }
         stage('Docker image push') {
