@@ -36,7 +36,7 @@ pipeline {
           }
       stage('Deploy app') {
          steps {
-           sh 'ls -ltr'
+           sh 'ls -lta'
            //sh 'kubectl apply -f app-deploy.yaml'
             // sh 'sudo docker container run -d --name testcont salilkul87/myjava-image:test'
         }
