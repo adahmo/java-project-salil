@@ -5,7 +5,6 @@ pipeline {
    }
 
   agent {label 'dev'}
-  agent any
   stages {
     stage('Pull Source') {
       steps {
