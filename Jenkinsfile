@@ -6,7 +6,7 @@ pipeline {
 
   agent {label 'dev'}
   stages {
-    stage('Pull Source') {
+    stage('Pull Code') {
       steps {
         git credentialsId: 'dfb0a627-ed77-4e0d-adf8-ada326a74efc', branch: "${git_branch}", url: "${git_url}"
        
